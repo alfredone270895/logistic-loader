@@ -57,7 +57,7 @@ export const Resume = ({ loadingState, totalCollies, totalWeight, transportUnit 
               </Column>
               <Column sm={12} md={3} lg={3}>
                 <div style={{ marginBottom: '2rem' }}>
-                  <h4>{loadingState.rows[idx].weightType ? 'Peso per collo' : 'Peso totale'}</h4>
+                  <h4>{loadingState.rows[idx].weightType ? 'Each collies' : 'Total weight'}</h4>
                 </div>
               </Column>
               <Column sm={12} md={3} lg={3}>

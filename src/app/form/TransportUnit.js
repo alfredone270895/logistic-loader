@@ -5,7 +5,7 @@ export const TransportUnit = ({ transportUnit, setTransportUnit }) => {
     <>
       <div style={{ marginBottom: '2rem' }}>
         <Row>
-          <h3 className="info-section__heading">Unità di trasporto</h3>
+          <h3 className="info-section__heading">Transport unit</h3>
         </Row>
       </div>
       <div style={{ marginBottom: '2rem' }}>

@@ -79,7 +79,6 @@ export const AppContent = () => {
         tWeight += parseInt(box.weight) * box.number;
       }
     });
-    console.log(tCollies);
     setTotalCollies(tCollies);
     setTotalWeight(tWeight);
   };

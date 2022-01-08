@@ -102,9 +102,9 @@ export const Cargo = ({ loadingState, handleAddRow, handleChange }) => {
                   </Tooltip>
                   <FormGroup legendText="Peso totale/per collo">
                     <RadioButtonGroup
-                      onChange={handleChange(idx, 'weight_type')}
-                      name={'weight_type-' + idx}
-                      defaultSelected={loadingState.rows[idx].weight_type}>
+                      onChange={handleChange(idx, 'weightType')}
+                      name={'weightType-' + idx}
+                      defaultSelected={loadingState.rows[idx].weightType}>
                       <RadioButton value={0} id={'radio-weight1' + idx} labelText="Per collo" />
                       <RadioButton value={1} labelText="Totale" id={'radio-weight2' + idx} />
                     </RadioButtonGroup>

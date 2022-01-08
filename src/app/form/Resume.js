@@ -6,7 +6,7 @@ export const Resume = ({ loadingState, totalCollies, totalWeight, transportUnit 
       <div style={{ marginBottom: '2rem' }}>
         <div style={{ marginBottom: '2rem' }}>
           <Row>
-            <h3 className="info-section__heading">Riepilogo</h3>
+            <h2 className="info-section__heading">Riepilogo</h2>
           </Row>
         </div>
         <div style={{ marginBottom: '2rem' }}>
@@ -60,7 +60,7 @@ export const Resume = ({ loadingState, totalCollies, totalWeight, transportUnit 
                   <Column sm={12} md={3} lg={3}>
                     <div style={{ marginBottom: '2rem' }}>
                       <h4>
-                        {loadingState.rows[idx].weight_type ? 'Peso per collo' : 'Peso totale'}
+                        {loadingState.rows[idx].weightType ? 'Peso per collo' : 'Peso totale'}
                       </h4>
                     </div>
                   </Column>

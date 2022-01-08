@@ -6,7 +6,7 @@
     "width": "200",
     "weight": "122",
     "stackable": 1,
-    "weight_type": 0
+    "weightType": 0
   },
   {
     "number": 20,
@@ -15,7 +15,7 @@
     "width": "30",
     "weight": "10",
     "stackable": 1,
-    "weight_type": 0
+    "weightType": 0
   },
   {
     "number": 2,
@@ -24,7 +24,7 @@
     "width": "100",
     "weight": "100",
     "stackable": 1,
-    "weight_type": 0
+    "weightType": 0
   },
   {
     "number": 3,
@@ -33,7 +33,7 @@
     "width": "200",
     "weight": "1000",
     "stackable": 1,
-    "weight_type": 0
+    "weightType": 0
   },
   {
     "number": 10,
@@ -42,7 +42,7 @@
     "width": "222",
     "weight": "1000",
     "stackable": 1,
-    "weight_type": 0
+    "weightType": 0
   },
   {
     "number": 5,
@@ -51,7 +51,7 @@
     "width": "35",
     "weight": "35",
     "stackable": 1,
-    "weight_type": 0
+    "weightType": 0
   },
   {
     "number": 10,
@@ -60,7 +60,7 @@
     "width": "50",
     "weight": "50",
     "stackable": 1,
-    "weight_type": 0
+    "weightType": 0
   },
   {
     "number": 4,
@@ -69,6 +69,6 @@
     "width": "120",
     "weight": "1000",
     "stackable": 1,
-    "weight_type": 0
+    "weightType": 0
   }
 ]

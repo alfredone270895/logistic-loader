@@ -30,7 +30,7 @@ export const AppContent = () => {
       length: '',
       height: '',
       stackable: 1,
-      weight_type: 0
+      weightType: 0
     };
     setLoadingState({
       rows: [...loadingState.rows, item]
@@ -69,18 +69,18 @@ export const AppContent = () => {
     setLoadingState({
       rows
     });
-    let total_weight = 0;
-    let total_collies = 0;
-    for (var i = 0; i < rows.length; i++) {
-      total_collies += parseInt(rows[i].number);
-      if (rows[i].type_of_weight === 1) {
-        total_weight += parseInt(rows[i].weight);
+    let tWeight = 0;
+    let tCollies = 0;
+    rows.forEach((box) => {
+      tCollies += parseInt(box.number);
+      if (box.weightType === 1) {
+        tWeight += parseInt(box.weight);
       } else {
-        total_weight += parseInt(rows[i].weight) * rows[i].number;
+        tWeight += parseInt(box.weight) * box.number;
       }
-    }
-    setTotalCollies(total_collies);
-    setTotalWeight(total_weight);
+    });
+    setTotalCollies(tCollies);
+    setTotalWeight(tWeight);
   };
 
   const formProps = {

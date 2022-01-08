@@ -11,19 +11,20 @@
  */
 
 import './App.scss';
+import { Fragment } from 'react';
 import LoaderGL from './LoaderGL';
 import { AppHeader } from './app/layout/Header';
 import { AppContent } from './app/AppContent';
 
 function App() {
   return (
-    <>
+    <Fragment>
       <LoaderGL />
       <div className="container">
         <AppHeader />
         <AppContent />
       </div>
-    </>
+    </Fragment>
   );
 }
 

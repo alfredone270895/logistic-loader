@@ -9,9 +9,7 @@ React logistic plan loader Made with carbon components and three.js<br>
 
 </div>
 
-## Run Locally
-
-![Tutorial][getting-started]
+## Run Local
 
 Clone the project
 
@@ -31,7 +29,7 @@ Start the server
   npm run start
 ```
 
-## Improvements & Fix 
+## Improvements - Fix
 1.Standard cargo
 2.Difficult cargo
 3.Refactor code

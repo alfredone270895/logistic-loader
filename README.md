@@ -3,10 +3,6 @@
 # LogLoader
 React logistic plan loader Made with carbon components and three.js<br>
 
-[Run](#run-local) •
-[Improvements](#improvements-fix) • 
-[Demo](#demo)
-
 </div>
 
 ## Run Local

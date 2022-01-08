@@ -1,7 +1,7 @@
 import { Button, Column, Form, Grid, Row } from 'carbon-components-react';
 import { AwesomeButton } from 'react-awesome-button';
 import { useState } from 'react';
-import mini from '../loadingExamples/mini.json';
+import standard from '../loadingExamples/standard.json';
 import { Cargo } from '../app/form/Cargo';
 import { TransportUnit } from '../app/form/TransportUnit';
 import { Resume } from '../app/form/Resume';
@@ -9,7 +9,6 @@ import { useLoaderState } from '../logloader';
 import Content from 'carbon-components-react/lib/components/UIShell/Content';
 
 export const AppContent = () => {
-  console.log(mini);
   const [totalCollies, setTotalCollies] = useState(0);
   const [totalWeight, setTotalWeight] = useState(0);
   const [transportUnit, setTransportUnit] = useState(0);
@@ -17,7 +16,7 @@ export const AppContent = () => {
   const [loading, setLoading] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [loadingState, setLoadingState] = useState({
-    rows: mini
+    rows: standard
   });
   const { runLoader } = useLoaderState(loadingState, setLoading, setLoaded, transportUnit);
 

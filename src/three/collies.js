@@ -25,19 +25,19 @@ export function generateCollies(w, h, d, type, index = null) {
   let colortmp;
   switch (type) {
     case '0':
-      text = `Collo numero ${index}. Larghezza: ${w} (cm) Lunghezza ${d} (cm) Altezza${h}  (cm)`;
+      text = `Box ${index}. Width ${w}m, Length ${d}m, Height ${h}m`;
       colortmp = textureLoader.load('assets/textures/t01.jpg');
       break;
     case '1':
-      text = `Collo numero ${index}. Larghezza: ${w} (cm) Lunghezza ${d} (cm) Altezza${h}  (cm)`;
+      text = `Box ${index}. Width ${w}m, Length ${d}m, Height ${h}m`;
       colortmp = textureLoader.load('assets/textures/t02.jpg');
       break;
     case 'base':
-      text = 'Base di carico dimensioni : Larghezza: 248 (cm) Lunghezza 1360 (cm) Altezza 270 (cm)';
+      text = 'Base. Width 248cm, Length 1360cm, Height 270cm';
       colortmp = textureLoader.load('assets/textures/metal.jpg');
       break;
     default:
-      text = `Collo numero ${index}. Larghezza: ${w} (cm) Lunghezza ${d} (cm) Altezza${h}  (cm)`;
+      text = `Box ${index}. Width ${w}m, Length ${d}m, Height ${h}m`;
       colortmp = textureLoader.load('assets/textures/t01.jpg');
       parameters.color = getRandomColor();
       break;

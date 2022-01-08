@@ -1,7 +1,8 @@
 <div align="center">
 
-# LogLoader
+# ![logo_small_icon_only](https://user-images.githubusercontent.com/37899490/148655174-f07f157f-b2cc-498f-b895-d3f31750b50c.png)
 React logistic plan loader Made with carbon components and three.js<br>
+
 
 </div>
 

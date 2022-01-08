@@ -16,11 +16,11 @@ export const Cargo = ({ loadingState, handleAddRow, handleChange }) => {
     <Fragment>
       <div style={{ marginBottom: '2rem' }}>
         <Row>
-          <h3 className="info-section__heading">Dettagli del carico</h3>
+          <h3 className="info-section__heading">Cargo details</h3>
         </Row>
       </div>
       {loadingState.rows.map((item, idx) => (
-        <>
+        <div key={`item-${idx}`}>
           <Row>
             <Column sm={12} md={3} lg={3}>
               <div style={{ marginBottom: '2rem' }}>
@@ -28,11 +28,12 @@ export const Cargo = ({ loadingState, handleAddRow, handleChange }) => {
                   id="number"
                   type="text"
                   name="number"
-                  placeholder="Numero di colli"
+                  placeholder="Collies number"
                   required
                   value={loadingState.rows[idx].number}
-                  invalidText="Obbligatorio"
+                  invalidText="Required"
                   onChange={handleChange(idx)}
+                  labelText="Collies number"
                 />
               </div>
             </Column>
@@ -42,11 +43,12 @@ export const Cargo = ({ loadingState, handleAddRow, handleChange }) => {
                   id="width"
                   type="text"
                   name="width"
-                  placeholder="Larghezza (CM)"
+                  placeholder="Width (CM)"
                   required
                   value={loadingState.rows[idx].width}
-                  invalidText="Obbligatorio"
+                  invalidText="Required"
                   onChange={handleChange(idx)}
+                  labelText="Width (CM)"
                 />
               </div>
             </Column>
@@ -56,11 +58,12 @@ export const Cargo = ({ loadingState, handleAddRow, handleChange }) => {
                   type="text"
                   name="length"
                   id="length"
-                  placeholder="Lunghezza (CM)"
+                  placeholder="Length (CM)"
                   required
                   value={loadingState.rows[idx].length}
-                  invalidText="Obbligatorio"
+                  invalidText="Required"
                   onChange={handleChange(idx)}
+                  labelText="Length (CM)"
                 />
               </div>
             </Column>
@@ -70,11 +73,12 @@ export const Cargo = ({ loadingState, handleAddRow, handleChange }) => {
                   type="text"
                   name="height"
                   id="height"
-                  placeholder="Altezza (CM)"
+                  placeholder="Height (CM)"
                   required
                   value={loadingState.rows[idx].height}
-                  invalidText="Obbligatorio"
+                  invalidText="Required"
                   onChange={handleChange(idx)}
+                  labelText="Height (CM)"
                 />
               </div>
             </Column>
@@ -86,27 +90,26 @@ export const Cargo = ({ loadingState, handleAddRow, handleChange }) => {
                   type="text"
                   name="weight"
                   id="weight"
-                  placeholder="Peso (KG)"
+                  placeholder="Weight (KG)"
                   required
                   value={loadingState.rows[idx].weight}
                   invalidText="Obbligatorio"
                   onChange={handleChange(idx)}
+                  labelText="Weight (KG)"
                 />
               </div>
             </Column>
             <Column sm={12} md={3} lg={3}>
               <div style={{ marginBottom: '2rem' }}>
                 <FormLabel>
-                  <Tooltip triggerText="">
-                    Seleziona se il peso è per singolo collo o totale della riga
-                  </Tooltip>
-                  <FormGroup legendText="Peso totale/per collo">
+                  <Tooltip triggerText="">Select if weight is total or for each collies</Tooltip>
+                  <FormGroup legendText="Weight total/Each collies">
                     <RadioButtonGroup
                       onChange={handleChange(idx, 'weightType')}
                       name={'weightType-' + idx}
                       defaultSelected={loadingState.rows[idx].weightType}>
-                      <RadioButton value={0} id={'radio-weight1' + idx} labelText="Per collo" />
-                      <RadioButton value={1} labelText="Totale" id={'radio-weight2' + idx} />
+                      <RadioButton value={0} id={'radio-weight1' + idx} labelText="Each collies" />
+                      <RadioButton value={1} labelText="Total" id={'radio-weight2' + idx} />
                     </RadioButtonGroup>
                   </FormGroup>
                 </FormLabel>
@@ -115,13 +118,13 @@ export const Cargo = ({ loadingState, handleAddRow, handleChange }) => {
             <Column sm={12} md={3} lg={3}>
               <div style={{ marginBottom: '2rem' }}>
                 <FormLabel>
-                  <Tooltip triggerText="">Seleziona se la tua merce è sovrapponibile</Tooltip>
-                  <FormGroup legendText="Merce sovrapponibile?">
+                  <Tooltip triggerText="">Select if goods is/are stackable</Tooltip>
+                  <FormGroup legendText="Is stackable?">
                     <RadioButtonGroup
                       onChange={handleChange(idx, 'stackable')}
                       name={'stackable-' + idx}
                       defaultSelected={loadingState.rows[idx].stackable}>
-                      <RadioButton value={1} id={'radio-stack1' + idx} labelText="Si" />
+                      <RadioButton value={1} id={'radio-stack1' + idx} labelText="Yes" />
                       <RadioButton value={0} labelText="No" id={'radio-stack2' + idx} />
                     </RadioButtonGroup>
                   </FormGroup>
@@ -129,12 +132,12 @@ export const Cargo = ({ loadingState, handleAddRow, handleChange }) => {
               </div>
             </Column>
           </Row>
-        </>
+        </div>
       ))}
       <Row>
         <Column>
           <AwesomeButton size="large" type="secondary" onPress={handleAddRow}>
-            Aggiungi una riga
+            Add a row
           </AwesomeButton>
         </Column>
       </Row>

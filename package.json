@@ -1,0 +1,55 @@
+{
+  "name": "logistic-loader",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@carbon/icons-react": "^10.44.0",
+    "carbon-components": "^10.50.0",
+    "carbon-components-react": "^7.50.0",
+    "carbon-icons": "^7.0.7",
+    "react": "^17.0.2",
+    "react-awesome-button": "^6.5.1",
+    "react-awesome-slider": "^4.1.0",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "react-select": "^4.3.1",
+    "sass": "^1.45.2",
+    "send": "^0.17.2",
+    "three": "^0.126.1",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "prettier": "^2.5.1"
+  }
+}

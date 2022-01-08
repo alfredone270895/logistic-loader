@@ -1,0 +1,29 @@
+[
+  {
+    "number": 20,
+    "length": "122",
+    "height": "122",
+    "width": "122",
+    "weight": "122",
+    "stackable": 1,
+    "weight_type": 0
+  },
+  {
+    "number": 10,
+    "length": "50",
+    "height": "50",
+    "width": "50",
+    "weight": "50",
+    "stackable": 1,
+    "weight_type": 0
+  },
+  {
+    "number": 20,
+    "length": "80",
+    "height": "120",
+    "width": "100",
+    "weight": "100",
+    "stackable": 1,
+    "weight_type": 0
+  }
+]

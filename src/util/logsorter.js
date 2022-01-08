@@ -3,8 +3,7 @@ export const sorter = (arr, key) => {
 };
 
 export const generateRealArray = async (arr) => {
-  var realArr = [];
-  // eslint-disable-next-line no-unused-vars
+  let realArr = [];
   let count = 0;
   arr.map((item) => {
     if (item.stackable === 1) {
@@ -16,20 +15,6 @@ export const generateRealArray = async (arr) => {
       realArr = [...realArr, ...arr];
     }
   });
-  return realArr;
-};
-
-export const nonStackArray = (arr) => {
-  var realArr = [];
-  let count = 0;
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr[i].number; j++) {
-      if (!arr[i].stackable) {
-        realArr[count] = arr[i];
-        count++;
-      }
-    }
-  }
   return realArr;
 };
 

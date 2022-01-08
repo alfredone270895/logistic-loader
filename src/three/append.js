@@ -8,6 +8,7 @@ export const append = async (renderer, scene, camera, controls) => {
   const documents = document.getElementById('loadergl');
   const { innerWidth, innerHeight } = window;
   documents.appendChild(renderer.domElement);
+  window.threeElement = renderer.domElement;
 
   const labelRenderer = new CSS2DRenderer();
   labelRenderer.setSize(innerWidth, innerHeight);
@@ -15,6 +16,7 @@ export const append = async (renderer, scene, camera, controls) => {
   labelRenderer.domElement.style.top = '0px';
   labelRenderer.domElement.style.pointerEvents = 'none';
   document.body.appendChild(labelRenderer.domElement);
+  window.labelRendererElement = labelRenderer.domElement;
 
   const labelDiv = document.createElement('div');
   labelDiv.className = 'label';

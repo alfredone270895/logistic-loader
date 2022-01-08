@@ -92,74 +92,63 @@ export const AppContent = () => {
 
   return (
     <Content id="main-content">
-      <section className={`bx--row info-section`}>
+      <section>
         <Grid>
           {!loading && !loaded && (
-            <Row>
-              <Column>
-                <Form {...formProps}>
-                  {formState === 0 && (
-                    <Cargo
-                      handleAddRow={handleAddRow}
-                      loadingState={loadingState}
-                      handleChange={handleChange}
-                    />
-                  )}
-                  {formState === 1 && (
-                    <TransportUnit
-                      transportUnit={transportUnit}
-                      setTransportUnit={setTransportUnit}
-                    />
-                  )}
+            <Form {...formProps}>
+              {formState === 0 && (
+                <Cargo
+                  handleAddRow={handleAddRow}
+                  loadingState={loadingState}
+                  handleChange={handleChange}
+                />
+              )}
+              {formState === 1 && (
+                <TransportUnit transportUnit={transportUnit} setTransportUnit={setTransportUnit} />
+              )}
 
-                  {formState === 2 && (
-                    <Resume
-                      loadingState={loadingState}
-                      totalCollies={totalCollies}
-                      totalWeight={totalWeight}
-                      transportUnit={transportUnit}
-                    />
-                  )}
-                  <Row>
-                    <Column>
-                      {formState < 2 ? (
-                        <AwesomeButton
-                          onPress={() => setFormState(formState + 1)}
-                          size="large"
-                          type="submit"
-                          style={{ float: 'right' }}>
-                          Prosegui
-                        </AwesomeButton>
-                      ) : (
-                        <Button
-                          onClick={() => runLoader()}
-                          size="large"
-                          type="submit"
-                          style={{ float: 'right' }}>
-                          Inizia a caricare
-                        </Button>
-                      )}
-                      {formState > 0 && (
-                        <AwesomeButton
-                          size="large"
-                          type="submit"
-                          onPress={() => setFormState(formState - 1)}
-                          style={{ float: 'right' }}>
-                          Indietro
-                        </AwesomeButton>
-                      )}
-                    </Column>
-                  </Row>
-                </Form>
-              </Column>
-            </Row>
-          )}
-          {loading && (
-            <Column m={12} md={12} lg={12}>
+              {formState === 2 && (
+                <Resume
+                  loadingState={loadingState}
+                  totalCollies={totalCollies}
+                  totalWeight={totalWeight}
+                  transportUnit={transportUnit}
+                />
+              )}
               <Row>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" />
+                <Column>
+                  {formState < 2 ? (
+                    <AwesomeButton
+                      onPress={() => setFormState(formState + 1)}
+                      size="large"
+                      type="submit"
+                      style={{ float: 'right' }}>
+                      Next
+                    </AwesomeButton>
+                  ) : (
+                    <AwesomeButton
+                      size="large"
+                      type="primary"
+                      onPress={() => {
+                        runLoader();
+                        window.scrollTo(0, 0);
+                      }}
+                      style={{ float: 'right' }}>
+                      Start loading
+                    </AwesomeButton>
+                  )}
+                  {formState > 0 && (
+                    <AwesomeButton
+                      size="large"
+                      type="submit"
+                      onPress={() => setFormState(formState - 1)}
+                      style={{ float: 'right' }}>
+                      Indietro
+                    </AwesomeButton>
+                  )}
+                </Column>
               </Row>
-            </Column>
+            </Form>
           )}
           {loaded && (
             <Row>
@@ -177,6 +166,9 @@ export const AppContent = () => {
                       type="submit"
                       onPress={() => {
                         setLoaded(false);
+                        const documents = document.getElementById('loadergl');
+                        documents.removeChild(window.threeElement);
+                        document.body.removeChild(window.labelRendererElement);
                         setFormState(formState - 1);
                       }}
                       style={{ float: 'right' }}>

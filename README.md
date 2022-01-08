@@ -30,9 +30,9 @@ Start the server
 ```
 
 ## Improvements - Fix
-1.Standard cargo
-2.Difficult cargo
-3.Refactor code
+-Standard cargo
+-Difficult cargo
+-Refactor code
 
 ## Demo
 

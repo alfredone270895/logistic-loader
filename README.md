@@ -29,10 +29,10 @@ Start the server
   npm run start
 ```
 
-## Improvements - Fix
--Standard cargo
--Difficult cargo
--Refactor code
+## Improvements/Fix
+  - Standard cargo<br>
+  - Difficult cargo<br>
+  - Refactor code<br>
 
 ## Demo
 

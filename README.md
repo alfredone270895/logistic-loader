@@ -8,3 +8,9 @@ For running application you can run from the terminal npm install , after node_m
 ## Running examples
     
 ### Mini
+
+### Standard
+Need improvements
+
+### Difficult
+The difficult options will be available in next months

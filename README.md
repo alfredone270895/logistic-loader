@@ -1,5 +1,6 @@
 <div align="center">
-![logo_small_icon_only](https://user-images.githubusercontent.com/37899490/149413923-cb1315de-6046-4763-af97-e8a601e4349b.png)
+ 
+<img src="https://user-images.githubusercontent.com/37899490/149413923-cb1315de-6046-4763-af97-e8a601e4349b.png" height="100" width="100"/>
 
 
  <h1>LOGLOADER</h1><br/>  

@@ -1,6 +1,7 @@
 <div align="center">
   
-![logo_white_large](https://user-images.githubusercontent.com/37899490/148655196-66039d98-3b8d-4f25-acec-b9361668f986.png)
+![logo_small](https://user-images.githubusercontent.com/37899490/149413596-2c340d4c-1a19-48c8-a22f-487a4dc5fb29.png)
+
   
 React logistic plan loader Made with carbon components and three.js<br>
 

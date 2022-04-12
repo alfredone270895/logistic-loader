@@ -5,8 +5,8 @@
 
  <h1>LOGLOADER</h1><br/>  
 React logistic plan loader Made with carbon components and three.js<br>
-
-
+Old project started in 2020 not finished for little time available
+ 
 </div>
 
 ## Run Local
@@ -33,6 +33,9 @@ Start the server
   - Standard cargo<br>
   - Difficult cargo<br>
   - Refactor code<br>
+ 
+ - Refactor code with js convention 
+ - Use typescript 
 
 ## Demo
 
